@@ -1,12 +1,12 @@
 .bgimage {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background: url(../static/images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .profile-image{
@@ -15,13 +15,28 @@
   border-radius:25px;
 }
 
+.vector-image{
+  height:200px;
+  width:200px;
+}
+
+.demo-image{
+  height:450px;
+  width:450px;
+}
+
+.demo-vector-image{
+  height:300px;
+  width:300px;
+}
+
 $outline-color: #555;
 .outline{
   text-shadow:
-          -1px -1px 0 $outline-color,
-          1px -1px 0 $outline-color,
-          -1px 1px 0 $outline-color,
-          1px 1px 0 $outline-color;
+    -1px -1px 0 $outline-color,
+    1px -1px 0 $outline-color,
+    -1px 1px 0 $outline-color,
+    1px 1px 0 $outline-color;
 }
 
 @for $i from 0 through 5 {

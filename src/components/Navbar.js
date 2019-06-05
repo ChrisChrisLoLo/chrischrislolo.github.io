@@ -36,19 +36,19 @@ export default class NavbarComp extends React.Component {
             <div>
                 <Navbar color="dark" dark expand="md">
                     <NavLink to="/" className="navbar-brand font-title">
-                        UCoursePlus
+                        Christian Lo
                     </NavLink>
-                    <NavbarToggler onClick={this.toggle}/>
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem onClick={this.close}>
-                                <NavLink to="/search/" className="nav-link">Search</NavLink>
-                            </NavItem>
-                            <NavItem onClick={this.close}>
-                                <NavLink to="/scheduleBuilder/" className="nav-link">Schedule Builder</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
+                    {/*<NavbarToggler onClick={this.toggle}/>*/}
+                    {/*<Collapse isOpen={this.state.isOpen} navbar>*/}
+                    {/*    <Nav className="ml-auto" navbar>*/}
+                    {/*        <NavItem onClick={this.close}>*/}
+                    {/*            <NavLink to="/search/" className="nav-link">Search</NavLink>*/}
+                    {/*        </NavItem>*/}
+                    {/*        <NavItem onClick={this.close}>*/}
+                    {/*            <NavLink to="/scheduleBuilder/" className="nav-link">Schedule Builder</NavLink>*/}
+                    {/*        </NavItem>*/}
+                    {/*    </Nav>*/}
+                    {/*</Collapse>*/}
                 </Navbar>
             </div>
         );
