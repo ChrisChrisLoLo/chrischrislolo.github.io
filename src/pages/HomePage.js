@@ -72,10 +72,18 @@ export default class HomePage extends React.Component {
         <Row className={"py-4"}>
           <Col>
             <h2>UCoursePlus</h2>
-            <p>
-              A modern, reactive redesign of the UofA's course builder.
-
+            <p className={"text-left"}>
+              A modern, reactive redesign of the UofA's course builder. Search, add, and swap courses in an instant.
+              The front-end is a responsive single page application built with React, and
+              consumes RESTful API endpoints from the Django Server.
             </p>
+            <h4>Features</h4>
+            <ul className={"text-left"}>
+              <li>Uses lazy loading to ensure a fast load time</li>
+              <li>Has token based authentication, Google sign-in, and a demo mode using local storage</li>
+              <li>Has a one step deployment process to deploy</li>
+              <li>Deployed on AWS</li>
+            </ul>
           </Col>
           <Col>
             <img src={demo0} className={"demo-image"}/>
