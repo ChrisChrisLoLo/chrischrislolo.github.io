@@ -79,10 +79,10 @@ export default class HomePage extends React.Component {
             </p>
             <h4>Features</h4>
             <ul className={"text-left"}>
-              <li>Uses lazy loading to ensure a fast load time</li>
-              <li>Has token based authentication, Google sign-in, and a demo mode using local storage</li>
-              <li>Has a one step deployment process to deploy</li>
-              <li>Deployed on AWS</li>
+              <li>Allows users to search for any course available, add them to a cart, and use them to build a schedule template</li>
+              <li>Makes use of token based authentication, Google sign-in, and a demo mode using local storage</li>
+              <li>Uses modern web technologies such as React, Sass, Django, and Bootstrap</li>
+              <li>Can deploy production to AWS in a single step</li>
             </ul>
           </Col>
           <Col>
@@ -93,6 +93,19 @@ export default class HomePage extends React.Component {
         <Row className={"py-4"}>
           <Col>
             <h2>UofA LDAP Calendar Scraper</h2>
+            <p className={"text-left"}>
+              This script scrapes the University of Alberta's Lightweight Directory Access Protocol (LDAP) Database
+              and converts it into a normalized SQLite file.
+            </p>
+            <h4>Features</h4>
+            <ul className={"text-left"}>
+              <li>Converts a NoSQL database schema into a 3NF SQL database schema</li>
+              <li>Handles duplication between terms by adding new primary keys</li>
+              <li>
+                Contains an additional script which can convert the 'verbatim' tables
+                and break them into individual entities to avoid duplication
+              </li>
+            </ul>
           </Col>
           <Col>
             <img src={demo5} className={"demo-image"}/>
@@ -102,6 +115,17 @@ export default class HomePage extends React.Component {
         <Row className={"py-4"}>
           <Col>
             <h2>UCourse</h2>
+            <p className={"text-left"}>
+              The original UCourse. Search any course in the UofA calendar and give it a rating
+              for others to see.
+            </p>
+            <h4>Features</h4>
+            <ul className={"text-left"}>
+              <li>Directly search for a course or search based on a set of criteria</li>
+              <li>Rate any course based on it's difficulty, workload, practicality, and enjoyment</li>
+              <li>Obtained course information scraped off the University's website</li>
+              <li>Deployed on PythonAnywhere</li>
+            </ul>
           </Col>
           <Col>
             <img src={demo1} className={"demo-image"}/>
@@ -111,6 +135,8 @@ export default class HomePage extends React.Component {
         <Row className={"py-4"}>
           <Col>
             <h2>Paint Art Gallery</h2>
+            <p>Create and host MSPaint masterpieces in this online gallery</p>
+            <p></p>
           </Col>
           <Col>
             <img src={demo2} className={"demo-image"}/>
@@ -120,6 +146,15 @@ export default class HomePage extends React.Component {
         <Row className={"py-4"}>
           <Col>
             <h2>Tamagotchi Clone</h2>
+            <p>Feed, bathe, and play with your pet in this online tamagotchi """clone""".</p>
+            <h4>Features</h4>
+            <ul className={"text-left"}>
+              <li>Copys elements from the original Tamagotchi, including hunger, illness, games</li>
+              <li>Stash up food, send your pet to work, and save up money to praise Steve Jobs</li>
+              <li>A new button to fast forward time for the impatient</li>
+              <li>Added the ability to save, load, and reset</li>
+              <li>Has a cheat mode</li>
+            </ul>
           </Col>
           <Col>
             <img src={demo3} className={"demo-image"}/>
