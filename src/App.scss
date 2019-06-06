@@ -1,9 +1,9 @@
 // Override default variables before the import
 //$body-bg: #000;
-$primary:#3FEFEF;
+$primary:#7be6fc;
 $primary-light:#E6F9FF;
 $secondary:#4A5BE5;
-$tertiary:#2B7281;
+$tertiary:#1e8499;
 //$success:#FEC100;
 //$danger:#703B3B;
 //$info:#63e792;
@@ -19,7 +19,11 @@ $card-cap-bg:#eeffee;
 @import url('https://fonts.googleapis.com/css?family=Muli|Open+Sans&display=swap');
 
 .bg-gradient{
-  background: linear-gradient(to right, $primary-light 0%, 50% ,$secondary 100%);
+  background: linear-gradient(to right, $light 20%, 70% ,$primary-light 100%);
+}
+
+.bg-gradient-secondary{
+  background: linear-gradient(to right, $primary-light 20%, 70% ,$primary 100%);
 }
 
 .bg-primary-light{
@@ -40,6 +44,22 @@ h6 {
 
 p {
   font-family: $body-font;
+}
+
+.icon-button-light {
+  color: white;
+}
+.icon-button-light:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+.icon-button-dark {
+  color: $black;
+}
+.icon-button-dark:hover {
+  color: darkgrey;
+  cursor: pointer;
 }
 
 .App {
