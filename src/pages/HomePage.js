@@ -4,6 +4,10 @@ import {
   Col
 } from "reactstrap";
 import Container from "reactstrap/es/Container";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLinkedinIn,faGithub,faGithubAlt} from "@fortawesome/free-brands-svg-icons";
+import {faLink} from "@fortawesome/free-solid-svg-icons";
+
 import "./HomePage.scss";
 
 import profile from "../static/images/prof.jpg";
@@ -33,6 +37,14 @@ export default class HomePage extends React.Component {
                     <h1 className={"font-title"}>Christian Lo</h1>
                     <h6 className={"mb-2 drop-fade-0"}>3rd year CS Specialization Student at the UofA</h6>
                     <h6 className={"mb-2 drop-fade-1"}>Professional Hobbyist</h6>
+                    <div>
+                      <a href={"https://github.com/ChrisChrisLoLo"} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faGithub} size={"2x"} className={"mr-3 icon-button-light"}/>
+                      </a>
+                      <a href={"https://www.linkedin.com/in/christian-lo-9265a5143/"} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={faLinkedinIn} size={"2x"} className={"mr-3 icon-button-light"}/>
+                      </a>
+                    </div>
                   </Col>
                   <Col>
                   </Col>
@@ -61,23 +73,30 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
 
-        <Row className={"text-center"}>
+        <Row className={"text-center py-4 bg-gradient"}>
           <Col>
             <h1>
-              Personal Projects
+              Top Personal Projects
             </h1>
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4"}>
-          <Col>
-            <h2>UCoursePlus</h2>
+        <Row className={"py-4 portfolio bg-gradient"}>
+          <Col className={"mx-4 px-5 text-left"}>
+            <h2 className={"text-center mb-3"}>
+              UCoursePlus
+              <a href={"http://ucourseplus.com"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} size={"1x"} className={"ml-4 icon-button-dark"}/>
+              </a>
+              <a href={"https://github.com/ChrisChrisLoLo/CoursePlusPlus"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
+              </a>
+            </h2>
             <p className={"text-left"}>
               A modern, reactive redesign of the UofA's course builder. Search, add, and swap courses in an instant.
               The front-end is a responsive single page application built with React, and
               consumes RESTful API endpoints from the Django Server.
             </p>
-            <h4>Features</h4>
             <ul className={"text-left"}>
               <li>Allows users to search for any course available, add them to a cart, and use them to build a schedule template</li>
               <li>Makes use of token based authentication, Google sign-in, and a demo mode using local storage</li>
@@ -90,14 +109,18 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4"}>
-          <Col>
-            <h2>UofA LDAP Calendar Scraper</h2>
+        <Row className={"py-4 portfolio bg-gradient"}>
+          <Col className={"mx-4 px-5 text-left"}>
+            <h2 className={"text-center mb-3"}>
+              UofA LDAP Calendar Scraper
+              <a href={"https://github.com/ChrisChrisLoLo/courseLdapScraper"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
+              </a>
+            </h2>
             <p className={"text-left"}>
               This script scrapes the University of Alberta's Lightweight Directory Access Protocol (LDAP) Database
               and converts it into a normalized SQLite file.
             </p>
-            <h4>Features</h4>
             <ul className={"text-left"}>
               <li>Converts a NoSQL database schema into a 3NF SQL database schema</li>
               <li>Handles duplication between terms by adding new primary keys</li>
@@ -112,14 +135,21 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4"}>
-          <Col>
-            <h2>UCourse</h2>
+        <Row className={"py-4 portfolio bg-gradient"}>
+          <Col className={"mx-4 px-5 text-left"}>
+            <h2 className={"text-center mb-3"}>
+              UCourse
+              <a href={"http://www.picopigeon.com"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} size={"1x"} className={"ml-4 icon-button-dark"}/>
+              </a>
+              <a href={"https://github.com/ChrisChrisLoLo/UCourse"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
+              </a>
+            </h2>
             <p className={"text-left"}>
               The original UCourse. Search any course in the UofA calendar and give it a rating
               for others to see.
             </p>
-            <h4>Features</h4>
             <ul className={"text-left"}>
               <li>Directly search for a course or search based on a set of criteria</li>
               <li>Rate any course based on it's difficulty, workload, practicality, and enjoyment</li>
@@ -132,26 +162,46 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4"}>
-          <Col>
-            <h2>Paint Art Gallery</h2>
+        <Row className={"py-4 portfolio bg-gradient"}>
+          <Col className={"mx-4 px-5 text-left"}>
+            <h2 className={"text-center mb-3"}>
+              Paint Art Gallery
+              <a href={"https://hidden-refuge-97022.herokuapp.com/"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} size={"1x"} className={"ml-4 icon-button-dark"}/>
+              </a>
+              <a href={"https://github.com/ChrisChrisLoLo/artGal"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
+              </a>
+            </h2>
             <p>Create and host MSPaint masterpieces in this online gallery</p>
-            <p></p>
+            <ul className={"text-left"}>
+              <li>Directly search for a course or search based on a set of criteria</li>
+              <li>Rate any course based on it's difficulty, workload, practicality, and enjoyment</li>
+              <li>Obtained course information scraped off the University's website</li>
+              <li>Deployed on PythonAnywhere</li>
+            </ul>
           </Col>
           <Col>
             <img src={demo2} className={"demo-image"}/>
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4"}>
-          <Col>
-            <h2>Tamagotchi Clone</h2>
+        <Row className={"py-4 portfolio bg-gradient"}>
+          <Col className={"mx-4 px-5 text-left"}>
+            <h2 className={"text-center mb-3"}>
+              Tamagotchi Clone
+              <a href={"http://coolgamelamename.netlify.com/"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLink} size={"1x"} className={"ml-4 icon-button-dark"}/>
+              </a>
+              <a href={"https://github.com/ChrisChrisLoLo/tamagotchiClone"} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
+              </a>
+            </h2>
             <p>Feed, bathe, and play with your pet in this online tamagotchi """clone""".</p>
-            <h4>Features</h4>
             <ul className={"text-left"}>
               <li>Copys elements from the original Tamagotchi, including hunger, illness, games</li>
-              <li>Stash up food, send your pet to work, and save up money to praise Steve Jobs</li>
-              <li>A new button to fast forward time for the impatient</li>
+              <li>Stash up food, send your pet to work, and save up money to worship Steve Jobs</li>
+              <li>Has a button to fast forward time for the impatient</li>
               <li>Added the ability to save, load, and reset</li>
               <li>Has a cheat mode</li>
             </ul>
@@ -161,6 +211,11 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
+        <Row className={"pt-4 bg-gradient"}>
+          <Col>
+            <h3>These projects and more can be found at my <a href={"https://github.com/ChrisChrisLoLo"}>github</a></h3>
+          </Col>
+        </Row>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 .bgimage {
   width: 100%;
-  height: 600px;
+  height: 800px;
   background: url(../static/images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -21,8 +21,15 @@
 }
 
 .demo-image{
-  height:450px;
-  width:450px;
+  height:400px;
+  width:400px;
+  transition: transform .2s;
+  //box-shadow: 2px 2px 1px grey;
+}
+
+.demo-image:hover{
+  transform: scale(1.2);
+  //box-shadow: 5px 5px 2px grey;
 }
 
 .demo-vector-image{
@@ -37,6 +44,11 @@ $outline-color: #555;
     1px -1px 0 $outline-color,
     -1px 1px 0 $outline-color,
     1px 1px 0 $outline-color;
+}
+
+.portfolio{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 @for $i from 0 through 5 {
