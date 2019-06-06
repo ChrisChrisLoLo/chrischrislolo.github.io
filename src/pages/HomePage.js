@@ -27,7 +27,7 @@ export default class HomePage extends React.Component {
 
         <Row>
           <Col className={"px-0"}>
-            <section className={"bgimage"}>
+            <section className={"bgimage-preload bgimage"}>
               <Container>
                 <Row>
                   <Col>
