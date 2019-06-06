@@ -34,10 +34,10 @@ export default class HomePage extends React.Component {
                   </Col>
                   <Col lg={"10"} md={"10"} sm={"10"} xs={"10"} className={"text-center text-white"}>
                     <img className={"profile-image"} src={profile}/>
-                    <h1 className={"font-title"}>Christian Lo</h1>
-                    <h6 className={"mb-2 drop-fade-0"}>3rd year CS Specialization Student at the UofA</h6>
-                    <h6 className={"mb-2 drop-fade-1"}>Professional Hobbyist</h6>
-                    <div>
+                    <h1 className={"font-title drop-fade-0"}>Christian Lo</h1>
+                    <h6 className={"mb-2 drop-fade-1"}>3rd year CS Specialization Student at the UofA</h6>
+                    <h6 className={"mb-2 drop-fade-2"}>Professional Creator</h6>
+                    <div className={"drop-fade-3"}>
                       <a href={"https://github.com/ChrisChrisLoLo"} target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} size={"2x"} className={"mr-3 icon-button-light"}/>
                       </a>
@@ -148,7 +148,8 @@ export default class HomePage extends React.Component {
             </h2>
             <p className={"text-left"}>
               The original UCourse. Search any course in the UofA calendar and give it a rating
-              for others to see.
+              for others to see. Uses a templating engine to deliver a clean UX. A stepping stone used to learn
+              concepts such the MVC pattern, ORM use, and static web pages.
             </p>
             <ul className={"text-left"}>
               <li>Directly search for a course or search based on a set of criteria</li>
@@ -173,12 +174,16 @@ export default class HomePage extends React.Component {
                 <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
               </a>
             </h2>
-            <p>Create and host MSPaint masterpieces in this online gallery</p>
+            <p>
+              Create and host MSPaint masterpieces in this online gallery.
+              Modifies an HTML5 canvas with Javascript. Saves, stores, and displays each image with the use of Data URIs.
+              Uses Node.js and MongoDB in the backend.
+            </p>
             <ul className={"text-left"}>
-              <li>Directly search for a course or search based on a set of criteria</li>
-              <li>Rate any course based on it's difficulty, workload, practicality, and enjoyment</li>
-              <li>Obtained course information scraped off the University's website</li>
-              <li>Deployed on PythonAnywhere</li>
+              <li>Sign into google and create a drawing on the canvas</li>
+              <li>Give your drawing a title and description, and then publish it for everyone to see</li>
+              <li>Comment on other people's work</li>
+              <li>Deployed on Heroku</li>
             </ul>
           </Col>
           <Col>
@@ -197,13 +202,17 @@ export default class HomePage extends React.Component {
                 <FontAwesomeIcon icon={faGithubAlt} size={"1x"} className={"ml-2 icon-button-dark"}/>
               </a>
             </h2>
-            <p>Feed, bathe, and play with your pet in this online tamagotchi """clone""".</p>
+            <p>
+              Feed, bathe, and play with your pet in this online tamagotchi "clone".
+              Uses local storage to save and load game state and the Date and Time API to
+              let the game progress in real time, even offline!
+            </p>
             <ul className={"text-left"}>
-              <li>Copys elements from the original Tamagotchi, including hunger, illness, games</li>
+              <li>Emulates elements from the original Tamagotchi, including hunger, illness, games</li>
               <li>Stash up food, send your pet to work, and save up money to worship Steve Jobs</li>
-              <li>Has a button to fast forward time for the impatient</li>
-              <li>Added the ability to save, load, and reset</li>
-              <li>Has a cheat mode</li>
+              <li>Pet statuses slowly change over time. Use the fast forward ability to play in a focused session</li>
+              <li>Save, load, and reset your game on the fly</li>
+              <li>Has several cheats available</li>
             </ul>
           </Col>
           <Col>
@@ -211,9 +220,9 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"pt-4 bg-gradient"}>
+        <Row className={"py-4 bg-secondary text-light"}>
           <Col>
-            <h3>These projects and more can be found at my <a href={"https://github.com/ChrisChrisLoLo"}>github</a></h3>
+            <h3>These projects and more can be found at my <a href={"https://github.com/ChrisChrisLoLo"} target="_blank" rel="noopener noreferrer">github</a></h3>
           </Col>
         </Row>
       </div>
