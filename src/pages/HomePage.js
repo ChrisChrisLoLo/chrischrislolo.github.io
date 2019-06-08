@@ -63,7 +63,7 @@ export default class HomePage extends React.Component {
               I enjoy making things.
               Having deployed multiple full-stack web applications, I am eager to learn
               new technologies to help deliver practical and novel products to users.
-              I am proficient with Java, React, and Python, among other technologies used in creating modern web applications
+              I am proficient with Java, React, and Python, among other technologies used in creating modern web applications.
             </p>
           </Col>
           <Col>
@@ -95,7 +95,7 @@ export default class HomePage extends React.Component {
             <p className={"text-left"}>
               A modern, reactive redesign of the UofA's course builder. Search, add, and swap courses in an instant.
               The front-end is a responsive single page application built with React, and
-              consumes RESTful API endpoints from the Django Server.
+              consumes RESTful API endpoints from a Django server.
             </p>
             <ul className={"text-left"}>
               <li>Allows users to search for any course available, add them to a cart, and use them to build a schedule template</li>
