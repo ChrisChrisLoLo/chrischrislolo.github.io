@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import { HashRouter, Switch, Route} from "react-router-dom";
 import { Container } from "reactstrap";
 import HomePage from "./pages/HomePage";

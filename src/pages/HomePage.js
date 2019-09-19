@@ -54,7 +54,7 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
 
-        <Row className={"py-4 bg-primary-light"}>
+        <Row className={"py-4 bg-primary"}>
           <Col xs={1} sm={1} md={2}>
           </Col>
           <Col>
@@ -220,9 +220,9 @@ export default class HomePage extends React.Component {
           </Col>
         </Row>
         {/*------------------------------------------------------------*/}
-        <Row className={"py-4 bg-secondary text-light"}>
+        <Row className={"py-4"}>
           <Col>
-            <h3>These projects and more can be found at my <a href={"https://github.com/ChrisChrisLoLo"} target="_blank" rel="noopener noreferrer">github</a></h3>
+            <h3>These projects and more can be found at my github</h3>
           </Col>
         </Row>
       </div>

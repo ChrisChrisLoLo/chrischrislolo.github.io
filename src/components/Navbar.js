@@ -34,7 +34,7 @@ export default class NavbarComp extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="dark" dark expand="md">
+                <Navbar color="dark" dark expand="md" sticky={true}>
                     <NavLink to="/" className="navbar-brand font-title">
                         Christian Lo
                     </NavLink>
